@@ -250,7 +250,7 @@ The project also demonstrates a practical defensive response workflow for invest
 
 Program: CodeAlpha Cybersecurity Internship
 
-Task: Task 4 – Network Intrusion Detection System
+Task: Task 4 Network Intrusion Detection System
 
 Project: Network Intrusion Detection System Using Suricata
 
