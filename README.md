@@ -1,6 +1,6 @@
 # CodeAlpha Network Intrusion Detection System
 
-A Suricata based Network Intrusion Detection System (NIDS) project completed as part of the CodeAlpha Cybersecurity Internship Task 4.
+A Suricata based Network Intrusion Detection System (NIDS) project completed as part of my CodeAlpha Cybersecurity Internship Task 4.
 
 ---
 
@@ -40,6 +40,7 @@ The service was running in IDS mode using AF_PACKET.
 Command used:
 
 sudo systemctl status suricata --no-pager
+
 The service status confirmed that Suricata was running successfully.
 
 ---
@@ -51,6 +52,7 @@ The Emerging Threats Open rule set was updated using suricata-update.
 Command used:
 
 sudo suricata-update
+
 The update process successfully:
 
 - Loaded 68,635 rules
@@ -62,6 +64,7 @@ The update process successfully:
 The configuration was also tested with:
 
 sudo suricata -T
+
 The rules were stored under:
 
 /var/lib/suricata/rules/suricata.rules
@@ -142,7 +145,6 @@ The current Suricata deployment is configured as an **IDS**, rather than an inli
 
 Therefore, the response process demonstrated by this project follows a defensive workflow:
 
-text
 Detect
    ↓
 Alert
