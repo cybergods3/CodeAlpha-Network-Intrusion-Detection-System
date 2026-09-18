@@ -1,0 +1,61 @@
+Suricata Configuration Notes
+============================
+
+Project:
+CodeAlpha Network Intrusion Detection System
+
+Operating System:
+Ubuntu Linux
+
+Suricata Version:
+6.0.3
+
+Network Mode:
+Bridged Adapter
+
+Monitoring Interface:
+enp0s3
+
+Network:
+10.226.95.0/24
+
+Suricata Mode:
+IDS using AF_PACKET
+
+HOME_NET:
+10.226.95.0/24
+
+Rule Source:
+Emerging Threats Open
+
+Rules Loaded:
+68,635
+
+Rules Enabled:
+52,696
+
+Flowbit Dependency Rules:
+136
+
+Rules Update Command:
+sudo suricata-update
+
+Configuration Test:
+sudo suricata -T
+
+Service Verification:
+sudo systemctl status suricata --no-pager
+
+Packet Monitoring:
+sudo grep -E 'capture.kernel_packets|capture.kernel_drops' /var/log/suricata/stats.log | tail -n 5
+
+Alert Log:
+sudo grep '"event_type":"alert"' /var/log/suricata/eve.json | tail -n 3
+
+EVE JSON Alert Signature:
+GPL ICMP_INFO PING *NIX
+
+Note:
+The alert used as evidence was a previously captured Suricata
+alert record. It is not presented as a new alert from the current
+laboratory network.
